@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> CloudCare | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <img src="image/logo.png" alt="CloudCare Logo" />
+            <span class="logo_name">CloudCare</span>
+        </div>
+        <ul class="nav-links">
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Category</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bxs-category'></i>
+                        <span class="link_name">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Category</a></li>
+                    <li><a href="index.html"><i class='bx bxl-html5'></i>HTML & CSS</a></li>
+                    <li><a href="javascript.html"><i class='bx bxl-javascript'></i>JavaScript</a></li>
+                    <li><a href="php.html"><i class='bx bxl-php'></i>PHP & MySQL</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bxs-book-content'></i>
+                        <span class="link_name">Posts</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Posts</a></li>
+                    <li><a href="#"><i class='bx bxs-paint'></i>Web Design</a></li>
+                    <li><a href="#"><i class='bx bx-log-in'></i>Login Form</a></li>
+                    <li><a href="#"><i class='bx bxs-credit-card'></i>Card Design</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="donor.html">
+                    <i class='bx bxs-droplet'></i>
+                    <span class="link_name">Find Donor</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="donor.html">Find Donor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-baby-carriage'></i>
+                    <span class="link_name">Baby Planner</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="baby.html">Baby Planner</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="iocn-link">
+                    <a href="#">
+                        <i class='bx bx-plug'></i>
+                        <span class="link_name">Plugins</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Plugins</a></li>
+                    <li><a href="#"><i class='bx bx-user'></i>UI Face</a></li>
+                    <li><a href="#"><i class='bx bxs-color'></i>Pigments</a></li>
+                    <li><a href="#"><i class='bx bxl-github'></i>Box Icons</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-compass'></i>
+                    <span class="link_name">Epidemic Analyzer</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="epidemic.html">Epidemic Analyzer</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name">Depression Test</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="depression.html">Depression Test</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">Health Score</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="healthScore.html">Health Score</a></li>
+                </ul>
+            </li>
+            <li>
+                <!-- Doctor Content Here-->
+                <div class="profile-details">
+                    <a href="dashboard.html"
+                        style="display: flex; align-items: center; text-decoration: none; width: 100%;">
+                        <div class="profile-content">
+                            <img src="image/profile.jpg" alt="profileImg">
+                            <div class="name-job">
+                                <div class="profile_name">Dr Raima Hridika</div>
+                                <div class="job">Psychiatrist</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-header">
+            <i class='bx bx-menu'></i>
+            <h1>Doctors Profile</h1>
+        </div>
+
+        <!-- Main Content Here Please-->
+        <div class="doctor-profile-container">
+            <div class="doctor-profile-card" style="padding: 36px 32px 28px 32px;">
+                <h2 class="doctor-profile-title"
+                    style="font-size: 2rem; color: #040d72; font-weight: 700; margin-bottom: 18px; text-align: center; width: 100%;">
+                    Doctor Profile
+                </h2>
+                <div class="doctor-profile-header">
+                    <img src="image/profile.jpg" alt="Doctor Profile" class="doctor-profile-img">
+                    <div class="doctor-profile-info">
+                        <div class="doctor-profile-name">Dr Raima Hridika</div>
+                        <div class="doctor-profile-degree">MBBS, MD (Psychiatry)</div>
+                        <div class="doctor-profile-id">Doctor ID: <span>CC-2025-001</span></div>
+                    </div>
+                </div>
+                <div class="doctor-profile-details">
+                    <div class="doctor-profile-details-col">
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-label">Medical College:</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-value">Mymensingh Medical College</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-label">Hospital Name:</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-value">CloudCare Hospital</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-label">Phone No:</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-value">+880 1234-567890</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-label">Email:</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-value">raima.hridika@cloudcare.com</span>
+                        </div>
+                    </div>
+                    <div class="doctor-profile-details-col">
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-label">Working Hours:</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-value">Mon-Fri, 9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-label">Credentials:</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-value">BMDC Reg. No: 123456 | Member, BPA</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-label">Specialities:</span>
+                        </div>
+                        <div class="doctor-profile-row">
+                            <span class="doctor-profile-value">Psychiatry, Child & Adolescent Mental Health, Counseling
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="doctor-profile-description"
+                    style="margin-top: 32px; color: #444; font-size: 1.08rem; text-align: center;">
+                    Dr Raima Hridika is a dedicated psychiatrist with a passion for mental health, specializing in child
+                    and adolescent care, and committed to providing compassionate counseling and support.
+                </div>
+                <button class="doctor-logout-btn" onclick="window.location.href='index.html'">
+                    <i class='bx bx-log-out'></i> Logout
+                </button>
+            </div>
+        </div>
+        <!-- End Doctor Profile -->
+
+
+        <script src="script.js"></script>
+        <script>
+            const sidebarBtn = document.querySelector(".bx-menu");
+            const sidebar = document.querySelector(".sidebar");
+
+            if (sidebarBtn) {
+                sidebarBtn.addEventListener("click", () => {
+                    sidebar.classList.toggle("close");
+                });
+            }
+        </script>
+
+</body>
+
+</html>

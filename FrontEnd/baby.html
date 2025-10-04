@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title> CloudCare | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <img src="image/logo.png" alt="CloudCare Logo" />
+      <span class="logo_name">CloudCare</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="dashboard.html">
+          <i class='bx bxs-dashboard'></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Category</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-category'></i>
+            <span class="link_name">Category</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Category</a></li>
+          <li><a href="index.html"><i class='bx bxl-html5'></i>HTML & CSS</a></li>
+          <li><a href="javascript.html"><i class='bx bxl-javascript'></i>JavaScript</a></li>
+          <li><a href="php.html"><i class='bx bxl-php'></i>PHP & MySQL</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bxs-book-content'></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#"><i class='bx bxs-paint'></i>Web Design</a></li>
+          <li><a href="#"><i class='bx bx-log-in'></i>Login Form</a></li>
+          <li><a href="#"><i class='bx bxs-credit-card'></i>Card Design</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-droplet'></i>
+          <span class="link_name">Find Donor</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="donor.html">Find Donor</a></li>
+        </ul>
+      </li>
+      <li class="active">
+        <a href="#">
+          <i class='bx bxs-baby-carriage'></i>
+          <span class="link_name">Baby Planner</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="baby.html">Baby Planner</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug'></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#"><i class='bx bx-user'></i>UI Face</a></li>
+          <li><a href="#"><i class='bx bxs-color'></i>Pigments</a></li>
+          <li><a href="#"><i class='bx bxl-github'></i>Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass'></i>
+          <span class="link_name">Epidemic Analyzer</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="epidemic.html">Epidemic Analyzer</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">Depression Test</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="depression.html">Depression Test</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="link_name">Health Score</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="healthScore.html">Health Score</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="profile-details">
+          <a href="dashboard.html" style="display: flex; align-items: center; text-decoration: none; width: 100%;">
+            <div class="profile-content">
+              <img src="image/profile.jpg" alt="profileImg">
+              <div class="name-job">
+                <div class="profile_name">Dr Raima Hridika</div>
+                <div class="job">Psychiatrist</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-header">
+      <i class='bx bx-menu'></i>
+      <h1>Baby Planner</h1>
+    </div>
+    <div class="main-content-row">
+      <div class="form-container">
+        <form>
+          <label for="id1">Enter Father ID:</label>
+          <input type="text" id="id1" name="father_id" placeholder="Father ID">
+          <label for="id2">Enter Mother ID:</label>
+          <input type="text" id="id2" name="mother_id" placeholder="Mother ID">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="result-dialogue">
+        <h2>Results</h2>
+        <div id="result-content">
+          <!-- Results will appear here -->
+        </div>
+      </div>
+
+
+
+      <!-- Details section moved to bottom and styled to take full width apart from sidebar -->
+      <div class="details-dialogue">
+        <h2>Details</h2>
+        <hr style="margin-bottom: 24px; border: none; border-top: 2px solid #e2e4e7;">
+        <div id="details-content" class="details-flex">
+          <div class="details-col">
+            <div>
+              <div class="details-label">Father Name</div>
+              <div class="details-value">ABC</div>
+            </div>
+            <div>
+              <div class="details-label">Mother Name</div>
+              <div class="details-value">XYZ</div>
+            </div>
+            <div>
+              <div class="details-label">Father Blood Group</div>
+              <div class="details-value">A+</div>
+            </div>
+            <div>
+              <div class="details-label">Mother Blood Group</div>
+              <div class="details-value">B+</div>
+            </div>
+            <div>
+              <div class="details-label">Hereditary Diseases</div>
+              <div class="details-value">None</div>
+            </div>
+          </div>
+          <div class="details-col">
+            <div>
+              <div class="details-label">Possible Baby Blood Group</div>
+              <div class="details-value">A+, B+, AB+, O+</div>
+            </div>
+            <div>
+              <div class="details-label">Genetic Conditions</div>
+              <div class="details-value">None</div>
+            </div>
+            <div>
+              <div class="details-label">Recommendations</div>
+              <div class="details-value">Regular health check-ups, balanced diet, and prenatal vitamins.</div>
+            </div>
+            <div>
+              <div class="details-label">Note</div>
+              <div class="details-value">Consult a healthcare professional for personalized advice.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+    const sidebarBtn = document.querySelector(".bx-menu");
+    const sidebar = document.querySelector(".sidebar");
+
+    if (sidebarBtn) {
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    }
+  </script>
+
+</body>
+
+</html>
