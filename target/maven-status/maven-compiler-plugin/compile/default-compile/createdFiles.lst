@@ -1,0 +1,13 @@
+com\example\blooddonation\model\Disease.class
+com\example\blooddonation\controller\DonorController.class
+com\example\blooddonation\configuration\CorsConfig$1.class
+com\example\blooddonation\controller\DashboardController.class
+com\example\blooddonation\BloodDonationApplication.class
+com\example\blooddonation\controller\RequestController.class
+com\example\blooddonation\service\RequestService.class
+com\example\blooddonation\repository\RequestRepository.class
+com\example\blooddonation\configuration\CorsConfig.class
+com\example\blooddonation\model\Donor.class
+com\example\blooddonation\service\DonorService.class
+com\example\blooddonation\repository\DonorRepository.class
+com\example\blooddonation\model\Request.class

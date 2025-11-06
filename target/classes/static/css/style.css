@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff6f6;
+  color: #333;
+}
+
+/* --- Top Navigation --- */
+.top-nav {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-nav button {
+  margin: 0 18px;
+  padding: 14px 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.top-nav button:hover {
+  color: #d32f2f;
+}
+
+.top-nav button.active {
+  color: #d32f2f;
+}
+
+.top-nav button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #c62828, #ef5350);
+  border-radius: 3px 3px 0 0;
+}
+
+/* --- Content Wrapper --- */
+.content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* --- Section & Cards --- */
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+h2 {
+  text-align: center;
+  color: #b71c1c;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* --- Filters --- */
+.filter-container {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-input {
+  padding: 8px 12px;
+  width: 170px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.filter-input:focus {
+  outline: none;
+  border-color: #d32f2f;
+  box-shadow: 0 0 6px rgba(198, 40, 40, 0.4);
+}
+
+/* --- Table --- */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 15px;
+  background: #fff;
+  border: 1px solid #f0cfcf;
+}
+
+table th, table td {
+  padding: 13px;
+  text-align: center;
+  border-bottom: 1px solid #f5dada;
+  border-right: 1px solid #f5dada;
+}
+
+table th:last-child, table td:last-child {
+  border-right: none;
+}
+
+table th {
+  background: linear-gradient(to right, #d32f2f, #c62828);
+  color: #fff;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #fff9f9;
+}
+
+table tr:hover {
+  background: #ffe3e3;
+  transition: 0.2s ease;
+}
+
+/* --- Buttons --- */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 3px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #d32f2f, #b71c1c);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #a11414;
+}
+
+.btn-success {
+  background: #43a047;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background: #2e7d32;
+}
+
+.btn-warning {
+  background: #fbc02d;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background: #f9a825;
+}
+
+.btn-danger {
+  background: #e53935;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #c62828;
+}
+
+.btn-secondary {
+  background: #b0bec5;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #90a4ae;
+}
+
+/* --- Modals --- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 480px;
+  max-width: 95%;
+  position: relative;
+  transform: translateY(-40px);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  color: #666;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #c62828;
+}
+
+/* --- Status Badges --- */
+.status-Pending {
+  background: #ffb300;
+  color: #fff;
+  padding: 6px 14px;
+  font-weight: 600;
+  box-shadow: 0 0 6px rgba(255, 179, 0, 0.3);
+}
+
+.status-Approved {
+  background: #4caf50;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 0 6px rgba(76, 175, 80, 0.3);
+}
+
+.status-Rejected {
+  background: #e53935;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 0 6px rgba(229, 57, 53, 0.3);
+}
